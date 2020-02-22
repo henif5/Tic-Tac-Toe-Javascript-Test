@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe game</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://getbootstrap.com/2.3.2/assets/css/bootstrap.css'>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div id="tic-tac-toe">
+<div class="span3 new_span">
+<div class="row">
+<h1 class="span3">Tic Tac Toe</h1>  <!-- title-->
+<div class="span3">
+    <!-- score table-->
+    <div class="input-prepend input-append">
+    <span class="add-on win_text">O won</span><strong id="o_win" class="win_times add-on">0</strong><span class="add-on">time(s)</span>
+    </div>
+    <div class="input-prepend input-append">
+    <span class="add-on win_text">X won</span><strong id="x_win" class="win_times add-on">0</strong><span class="add-on">time(s)</span>
+    </div>
+    <!-- end of score table-->  
+</div>
+
+    <p>Set up board size</p>
+    
+        <label for="boardsize_input">Board size :</label><input type="number" size="30" id="boardsize_input" placeholder="Input size between 2 - 100" min="2" max="100">
+        <input type="button" id="playButton" value="PLAY!">
+    
+
+
+    
+</div>
+<!-- tictactoe board-->
+<div id="boarForm">
+  <ul class="row" id="game">
+    <li id="one" class="span1 btn" >+</li>  
+    <li id="two" class="span1 btn">+</li>
+    <li id="three" class="span1 btn">+</li>
+    <li id="four" class="span1 btn">+</li>
+    <li id="five" class="span1 btn">+</li>
+    <li id="six" class="span1 btn">+</li>
+    <li id="seven" class="span1 btn">+</li>
+    <li id="eight" class="span1 btn">+</li>
+    <li id="nine" class="span1 btn">+</li>
+  </ul>
+</div>
+
+<!-- end of tictactoe board-->
+<div class="clr">&nbsp;</div>
+<div class="row"><a href="#" id="reset" class="btn-success btn span3" >Restart</a></div></div>
+</div>
+  <script src='https://code.jquery.com/jquery-1.7.2.min.js'></script>
+
+  
+
+    <script  src="js/index.js" type="text/javascript"></script>
+
+
+
+
+</body>
+
+</html>
